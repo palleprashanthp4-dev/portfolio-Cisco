@@ -86,8 +86,10 @@ where I can contribute my networking knowledge while learning from industry prof
 # 🏢 Project 1: Small Office Network
 
 ## 📸 Topology
+<p align="center">
+  <img src="Screenshot 2026-06-08 214426.png" alt="network issue!" width="800">
+</p>
 
-![Small Office Network](Screenshot 2026-06-08 214426.png)
 
 ### Project Overview
 
@@ -147,8 +149,10 @@ ping 192.168.1.10
 # 🌍 Project 2: Multi-LAN Enterprise Network
 
 ## 📸 Topology
+<p align="center">
+  <img src="Screenshot 2026-06-08 214237.png" alt="network issue!" width="800">
+</p>
 
-![Enterprise Network](Screenshot 2026-06-08 214237.png)
 
 ### Project Overview
 
@@ -193,8 +197,10 @@ ping 192.168.2.10
 # 🔥 Project 3: Router-on-a-Stick (Inter-VLAN Routing)
 
 ## 📸 Topology
+  <img src="Screenshot 2026-06-08 214237.png" alt="network issue!" width="800">
+</p>
 
-![Router on a Stick](Screenshot 2026-06-08 214237.png)
+
 
 ### Project Overview
 

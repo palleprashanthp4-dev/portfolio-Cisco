@@ -1,209 +1,345 @@
-# portfolio-Cisco
-# 👋 Hi, I'm Prashanth
+<p align="center">
+  <img src="images/network-banner.gif" width="100%">
+</p>
 
-## 🚀 CCNA & Networking Enthusiast
+<h1 align="center">🌐 Prashanth's Cisco Networking Portfolio</h1>
 
-Passionate networking fresher with strong fundamentals in Cisco networking, routing, switching, and network troubleshooting. I enjoy designing, configuring, and testing enterprise-style networks using Cisco Packet Tracer and continuously improving my networking skills.
+<h3 align="center">
+<em>CCNA Aspirant • Network Engineer in Progress • Cisco Packet Tracer Enthusiast</em>
+</h3>
+
+<p align="center">
+
+![Cisco](https://img.shields.io/badge/Cisco-Networking-blue)
+![CCNA](https://img.shields.io/badge/CCNA-Learning-red)
+![Routing](https://img.shields.io/badge/Routing-OSPF-green)
+![Switching](https://img.shields.io/badge/Switching-VLAN-orange)
+![DHCP](https://img.shields.io/badge/DHCP-Service-blue)
+![NAT](https://img.shields.io/badge/NAT-Configuration-yellow)
+![GitHub](https://img.shields.io/badge/GitHub-Portfolio-black)
+
+</p>
 
 ---
 
-## 🎯 Career Objective
+# 👋 About Me
 
-Seeking an entry-level Networking Engineer, NOC Engineer, Network Support Engineer, or CCNA Fresher role where I can apply my networking knowledge, gain hands-on industry experience, and contribute to building reliable network infrastructures.
+*Passionate Networking Fresher with strong knowledge of Cisco Routing, Switching, Network Fundamentals, and Troubleshooting.*
+
+I enjoy designing and configuring enterprise-style networks using Cisco Packet Tracer and continuously improving my technical skills through hands-on labs and real-world networking scenarios.
+
+### Why Networking?
+
+> *"Networks are the backbone of modern communication. Every packet tells a story, and every route leads to a destination."*
 
 ---
 
-# 🛠️ Technical Skills
+# 🎯 Career Objective
+
+Seeking opportunities as:
+
+* Network Engineer
+* Network Support Engineer
+* NOC Engineer
+* IT Support Engineer
+* CCNA Fresher
+
+where I can contribute my networking knowledge while learning from industry professionals and building scalable, reliable network infrastructures.
+
+---
+
+# 🛠 Technical Skills
 
 ## Routing
-- Static Routing
-- Default Routing
-- Dynamic Routing
-- OSPF Configuration
-- Route Verification
-- Network Troubleshooting
+
+* Static Routing
+* Default Routing
+* OSPF
+* Route Verification
+* Router Configuration
 
 ## Switching
-- VLAN Configuration
-- Trunk Configuration
-- Inter-VLAN Communication
-- Switch Configuration
-- Port Management
-- MAC Address Table Verification
+
+* VLAN Configuration
+* Trunk Configuration
+* Inter-VLAN Routing
+* Port Security
+* MAC Address Verification
 
 ## Network Services
-- DHCP Configuration
-- DNS Configuration
-- NAT Configuration
-- IP Address Management
 
-## Network Fundamentals
-- OSI Model
-- TCP/IP Model
-- IPv4 Addressing
-- Subnetting
-- Network Security Basics
-- Troubleshooting Methodology
+* DHCP
+* DNS
+* NAT
+* PAT
 
-## Cisco Skills
-- Cisco IOS Commands
-- Router Configuration
-- Switch Configuration
-- Device Verification
-- Configuration Backup
-- Network Testing
+## Networking Fundamentals
+
+* OSI Model
+* TCP/IP Model
+* IPv4 Addressing
+* Subnetting
+* Network Troubleshooting
 
 ---
 
-# 📚 Cisco Packet Tracer Experience
+# 🏢 Project 1: Small Office Network
 
-### ✔ Router Configuration
-- Interface Configuration
-- IP Address Assignment
-- Static Routes
-- Default Routes
-- OSPF Setup
+## 📸 Topology
 
-### ✔ Switch Configuration
-- VLAN Creation
-- Trunk Ports
-- Access Ports
-- Basic Security Configuration
+![Small Office Network](Screenshot 2026-06-08 214426.png)
 
-### ✔ Network Services
-- DHCP Server Setup
-- DNS Server Configuration
-- NAT Implementation
+### Project Overview
 
-### ✔ Connectivity Testing
-- Ping Verification
-- Route Verification
-- End-to-End Connectivity Testing
+This project simulates a Small Office Network where multiple users are connected through a Cisco switch and communicate within the same LAN.
 
----
+### Devices Used
 
-# 🔥 Networking Projects
+| Device            | Count |
+| ----------------- | ----- |
+| PCs               | 4     |
+| Cisco 2960 Switch | 1     |
+| Cisco 2911 Router | 1     |
 
-## Project 1: Small Enterprise Network
+### Skills Demonstrated
 
-### Features
-- Multiple Routers
-- Multiple Switches
-- VLAN Segmentation
-- DHCP Server
-- DNS Server
-- OSPF Routing
-- NAT Configuration
+✅ IP Addressing
 
-### Technologies Used
-- Cisco Packet Tracer
-- Cisco Routers
-- Cisco Switches
+✅ Switch Configuration
 
----
+✅ Router Configuration
 
-## Project 2: Multi-Branch Office Network
+✅ Connectivity Testing
 
-### Features
-- Branch Connectivity
-- Dynamic Routing using OSPF
-- DHCP for Clients
-- DNS Resolution
-- Network Monitoring
+✅ Network Troubleshooting
 
----
-
-## Project 3: VLAN and Inter-VLAN Routing Lab
-
-### Features
-- VLAN Segmentation
-- Trunk Links
-- Router-on-a-Stick Configuration
-- Communication Between VLANs
-
----
-
-# 💻 Common Cisco Commands
+### Router Configuration
 
 ```bash
 enable
 configure terminal
 
-hostname Router1
-
 interface g0/0
 ip address 192.168.1.1 255.255.255.0
 no shutdown
 
-router ospf 1
-network 192.168.1.0 0.0.0.255 area 0
+end
+write memory
+```
 
-ip route 0.0.0.0 0.0.0.0 10.0.0.1
+### Verification Commands
 
+```bash
+show ip interface brief
 show running-config
+ping 192.168.1.10
+```
+
+### Learning Outcomes
+
+* Understanding LAN communication
+* Default Gateway functionality
+* Layer 2 switching
+* Layer 3 routing basics
+
+---
+
+# 🌍 Project 2: Multi-LAN Enterprise Network
+
+## 📸 Topology
+
+![Enterprise Network](Screenshot 2026-06-08 214237.png)
+
+### Project Overview
+
+Designed two LANs connected through a Cisco router to enable communication between different networks.
+
+### Features
+
+* Multiple LANs
+* Router Connectivity
+* End-to-End Communication
+* IP Routing
+
+### Router Configuration
+
+```bash
+interface g0/0
+ip address 192.168.1.1 255.255.255.0
+no shutdown
+
+interface g0/1
+ip address 192.168.2.1 255.255.255.0
+no shutdown
+```
+
+### Verification
+
+```bash
 show ip route
 show ip interface brief
-show ip ospf neighbor
-show vlan brief
+ping 192.168.2.10
 ```
+
+### Learning Outcomes
+
+* Routing concepts
+* Network segmentation
+* Gateway management
+* Connectivity troubleshooting
+
+---
+
+# 🔥 Project 3: Router-on-a-Stick (Inter-VLAN Routing)
+
+## 📸 Topology
+
+![Router on a Stick](Screenshot 2026-06-08 214237.png)
+
+### Project Overview
+
+Implemented Inter-VLAN Routing using Router-on-a-Stick architecture.
+
+Separate VLANs were created for departments, and a single router interface handled routing between VLANs using subinterfaces.
+
+### VLAN Design
+
+| VLAN    | Department |
+| ------- | ---------- |
+| VLAN 10 | HR         |
+| VLAN 20 | Finance    |
+| VLAN 30 | IT         |
+
+### Switch Configuration
+
+```bash
+enable
+configure terminal
+
+vlan 10
+name HR
+
+vlan 20
+name FINANCE
+
+vlan 30
+name IT
+
+interface fa0/1
+switchport mode access
+switchport access vlan 10
+
+interface fa0/24
+switchport mode trunk
+```
+
+### Router Configuration
+
+```bash
+interface g0/0
+no shutdown
+
+interface g0/0.10
+encapsulation dot1Q 10
+ip address 192.168.10.1 255.255.255.0
+
+interface g0/0.20
+encapsulation dot1Q 20
+ip address 192.168.20.1 255.255.255.0
+
+interface g0/0.30
+encapsulation dot1Q 30
+ip address 192.168.30.1 255.255.255.0
+```
+
+### Verification
+
+```bash
+show vlan brief
+show interfaces trunk
+show ip interface brief
+ping between VLANs
+```
+
+### Learning Outcomes
+
+* VLAN Segmentation
+* Trunking
+* Inter-VLAN Routing
+* Router Subinterfaces
+* Enterprise Network Design
+
+---
+
+# 💻 Essential Cisco Commands
+
+| Command                 | Purpose            |
+| ----------------------- | ------------------ |
+| show ip interface brief | Verify interfaces  |
+| show ip route           | View routing table |
+| show vlan brief         | View VLANs         |
+| show interfaces trunk   | Verify trunks      |
+| show running-config     | View configuration |
+| ping                    | Test connectivity  |
+| traceroute              | Track packet path  |
 
 ---
 
 # 📈 Current Learning
 
-- Advanced OSPF
-- Network Security
-- ACL Configuration
-- STP
-- EtherChannel
-- WAN Technologies
-- CCNA Certification Preparation
+* Advanced OSPF
+* ACL Configuration
+* STP
+* EtherChannel
+* WAN Technologies
+* Network Security
+* CCNA Certification
 
 ---
 
-# 🏆 Strengths
+# 🏆 Why Hire Me?
 
-✅ Strong Networking Fundamentals
+✔ Strong Networking Fundamentals
 
-✅ Router Configuration
+✔ Cisco Packet Tracer Lab Experience
 
-✅ Switch Configuration
+✔ Routing & Switching Knowledge
 
-✅ OSPF Routing
+✔ OSPF Understanding
 
-✅ DHCP Configuration
+✔ VLAN Implementation
 
-✅ DNS Configuration
+✔ Troubleshooting Mindset
 
-✅ NAT Configuration
+✔ Quick Learner
 
-✅ Troubleshooting Skills
+✔ Team Player
 
-✅ Quick Learner
+✔ Passionate About Networking
 
-✅ Team Player
+*I may be a fresher, but I continuously build practical networking skills through hands-on projects, troubleshooting exercises, and self-learning. I am eager to contribute, learn, and grow as a Network Engineer.*
 
 ---
 
 # 📫 Connect With Me
 
 ### GitHub
-https://github.com/YOUR_USERNAME
+
+https://github.com/palleprashanthp4-dev/portfolio-Cisco
 
 ### LinkedIn
-Add your LinkedIn profile here
+https://www.linkedin.com/in/palle-prashanth-p-1616413b8/
 
 ### Email
-your-email@example.com
+
+[your-email@example.com](mailto:palleprashanthp4@gmail.com)
 
 ---
 
-# 📊 Career Goal
+<h3 align="center">
+⭐ Thank You For Visiting My Networking Portfolio ⭐
+</h3>
 
-To become a skilled Network Engineer by continuously learning Cisco technologies, gaining practical networking experience, and contributing to modern enterprise network infrastructures.
-
----
-
-⭐ If you are a recruiter, feel free to explore my repositories and networking projects.
-
-Thank you for visiting my profile!
+<p align="center">
+<em>"Connecting Networks, Building Knowledge, Creating Opportunities."</em>
+</p>
